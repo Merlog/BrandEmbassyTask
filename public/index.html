@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="http://fidesweb.com/et/js/carousel.js"></script>
+    <!--<script src="http://fidesweb.com/et/js/graf.js"></script>-->
+<link rel="stylesheet" href="%PUBLIC_URL%graf.css">
+    <title>Brand Embassy</title>
+  </head>
+  <body>
+
+    <div id="root"></div>
+   
+<script> 		
+
+window.onload = function() {
+	window.jQuery('header nav').meanmenu();	
+	new flickerplate('.flicker');
+	jQuery.getScript( "http://fidesweb.com/et/js/graf.js" );
+	
+	
+	   var tr = [];
+        tr[0] = ['&nbsp;', '8:00', '&nbsp;', '9:00', '&nbsp;', '10:00', '&nbsp;', '11:00', '&nbsp;', '12:00', '&nbsp;', '13:00', '&nbsp;', '14:00', '&nbsp;', '15:00', '&nbsp;', '16:00', '&nbsp;', '17:00', '&nbsp;', '18:00', '&nbsp;', '19:00', '&nbsp;', '20:00', '&nbsp;', '21:00', '&nbsp;', '22:00'];
+        tr[1] = ['bez fronty', '1200', '0', '0', '0', '1000', '1400', '0', '0', '0', '0', '0', '0', '0', '1300', '1500', '0', '2060', '0', '0', '0', '0', '0', '0', '2200', '0', '0', '2000', '1800', '1200'];
+        tr[2] = ['možnost fronty', '0', '2700', '3000', '2500', '0', '0', '2400', '0', '0', '0', '2500', '2200', '2000', '0', '0', '2200', '0', '0', '0', '0', '0', '2400', '2400', '0', '0', '3000', '0', '0', '0'];
+        tr[3] = ['pravděpodobné čekání ve frontě', '0', '0', '0', '0', '0', '0', '0', '5000', '4500', '4200', '0', '0', '0', '0', '0', '0', '0', '4500', '3500', '4250', '4200', '0', '0', '0', '3600', '0', '0', '0', '0'];
+        
+        for (x = 0; x < tr.length; x++) {
+            for (i = 0; i < tr[x].length; i++) {
+            
+                if (x == 0){  // conditions for table header
+                  if (i == 0){
+                    $('.tableRow'+[x]).append("<td>"+tr[x][i]+"</td>"); // first column
+                  } else {
+                    $('.tableRow'+[x]).append("<th scope='col'>"+tr[x][i]+"</th>"); // the other columns
+                  }
+                } else {  // conditions for the other rows
+                  if (i == 0){
+                    $('.tableRow'+[x]).append("<th scope='row'>"+tr[x][i]+"</th>"); // first column
+                  } else {
+                    $('.tableRow'+[x]).append("<td scope='col'>"+tr[x][i]+"</td>"); // the other columns
+                  }
+                }            
+            }         
+        } 	
+	
+	}	
+
+		
+    </script>
+
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>  
+    <script src="http://fidesweb.com/et/js/jquery.menu.js"></script>
+  </body>
+</html>

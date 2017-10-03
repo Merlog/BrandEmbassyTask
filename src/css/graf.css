@@ -1,0 +1,341 @@
+/*@font-face{font-family:'ChevinMedium';
+    src:url("font/ChevinMedium.eot?c4hmew");
+    src:url("font/ChevinMedium.eot?#iefixc4hmew") format("embedded-opentype"),url("font/ChevinMedium.ttf?c4hmew") format("truetype");}*/
+
+
+.graf1, .graf2 {
+	color: #000;
+	font: 14px/20px ChevinMedium, 'Helvetica Neue', Arial, sans-serif;
+	margin: 0 0 0 60px;;
+	padding: 0; font-weight: 300;
+}
+.graf1 h3 {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 30px 0;
+	padding: 0; position: relative;
+	text-align: left;
+}
+.graf2 h3 {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 0px 0;
+	padding: 0; position: relative;
+	text-align: left;
+}
+.graf1 h3::before{
+    content: " ";
+	 background-image: url(../img/graf-logo.png);
+    background-repeat: no-repeat; position: absolute; left:-50px; top: 75px;  width: 40px; min-height: 50px;
+}
+.graf2 h3::before{
+    content: " ";
+	 background-image: url(../img/graf-logo.png);
+    background-repeat: no-repeat; position: absolute; left:-50px; top: 105px;  width: 40px; min-height: 50px;
+}
+
+ h4 {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+ h4::before{
+    content: " ";
+	 background-image: url(../img/hodiny.png);
+    background-repeat: no-repeat; position: absolute; left:-45px; top: 100px;  width: 40px; min-height: 50px;
+}
+ .graf2 h4::before{
+    content: " ";
+	 background-image: url(../img/hodiny.png);
+    background-repeat: no-repeat; position: absolute; left:-45px; top: 140px;  width: 40px; min-height: 50px;
+}
+
+
+
+/* Table */
+#data-table {
+	border: none; /* Turn off all borders */
+	border-top: 1px solid #ccc;
+	width: 640px;
+}
+#data-table caption {
+	color: #545454;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	text-align: center;
+}
+#data-table thead {
+	background: #f0f0f0;
+}
+#data-table th, 
+#data-table td {
+	border: none; /* Turn off all borders */
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: 10px;
+	text-align: left;	
+}
+/* Table */
+#data-table2 {
+	border: none; /* Turn off all borders */
+	border-top: 1px solid #ccc;
+	width: 640px;
+    display: none;
+}
+#data-table2 caption {
+	color: #545454;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	text-align: center;
+}
+#data-table2 thead {
+	background: #f0f0f0;
+}
+#data-table2 th, 
+#data-table2 td {
+	border: none; /* Turn off all borders */
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: 10px;
+	text-align: left;	
+}
+
+
+/* Toggle */
+.toggles {
+	background: #ebebeb;	
+	color: #545454;
+	height: 20px;
+	padding: 15px;
+}
+.toggles p {
+	margin: 0;
+}
+.toggles a {
+	background: #222;
+	border-radius: 3px;	
+	color: #fff;
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0 6px;
+	text-decoration: none;
+}
+.toggles a:hover {
+	background: #666;
+}
+#reset-graph-button {
+	float:right;
+}
+
+/* Graph */
+/* Containers */
+#wrapper {
+	height: 70px;
+	left: 50%;
+	margin: -210px 0 0 -270px;
+	position: absolute;
+	top: 50%;	
+	width: 540px;
+}
+#wrapper2 {
+	height: 70px;
+	left: 50%;
+	margin: -210px 0 0 -270px;
+	position: absolute;
+	top: 50%;	
+	width: 540px;
+}
+#figure {
+	height: 180px;
+	position: relative;
+}
+
+
+
+#figure ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#figure2 {
+	height: 220px;
+	position: relative;
+}
+
+
+
+#figure2 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.graph {
+	height: 123px;
+    font-weight: 400;
+	position: relative;
+}
+
+.graf2 .graph {
+	height: 163px;
+    font-weight: 400;
+	position: relative;
+}
+
+
+/* Legend */
+.legend {
+	border-radius: 4px;
+	bottom: 0;
+	position: absolute;
+	text-align: left;
+	width: 540px;	
+}
+.legend li {
+	display: block;
+	float: left;
+	height: 15px;
+	margin: 0;
+	padding: 10px 25px 10px 0;
+	
+}
+.legend span.icon {
+	background-position: 50% 0;
+	border-radius: 8px;
+	display: block;
+	float: left;
+	height: 16px;
+	margin: 2px 7px 0 0;
+	width: 16px;	
+}
+
+/* X-Axis */
+.x-axis {
+	bottom: 0; letter-spacing: 1px;
+	color: #333;
+	position: absolute;
+	text-align: center;
+	width: 540px;
+}
+.x-axis li {
+	float: left;
+	margin: 0 0px;
+	padding: 0px 0px 0;
+	width: 18px;
+
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+
+/* Y-Axis */
+.y-axis {
+	color: #555;
+	position: absolute;
+	text-align: right;
+	width: 100%;
+}
+.y-axis li {
+	border-top: 0px solid #ccc;
+	display: block;
+	height: 15px;
+	width: 100%;
+}
+.y-axis li span {
+	display: none;
+	margin: -10px 0 0 -60px;
+	padding: 0 10px;
+	width: 40px;
+}
+
+/* Graph Bars */
+.bars {
+	height: 70px;
+	position: absolute;
+	width: 100%;
+	z-index: 18;
+    margin-bottom: 20px;
+}
+.graf2 .bars {
+	height: 110px;
+	position: absolute;
+	width: 100%;
+	z-index: 18;
+    margin-bottom: 20px;
+}
+.bar-group {
+	float: left;
+	height: 100%;
+	margin: 0 0px;
+	position: relative;
+	width: 18px;
+}
+.bar {
+	border-radius: 9px 9px 0 0;
+	bottom: 0;
+	cursor: pointer;	
+	height: 0;
+	position: absolute;
+	text-align: center;
+	width: 18px;
+}
+.graf2 .bar {border-radius: 0px 0px 0 0;}
+
+.bar.fig0 {
+	left: 0;
+}
+.bar.fig1 {
+	left: 0px;
+}
+.bar.fig2 {
+	left: 0px;
+}
+.bar span {
+	background: #fefefe;
+	border-radius: 3px;
+	left: -8px;
+	display: none;
+	margin: 0;
+	position: relative;
+	text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+	width: 40px;
+	z-index: 20;
+	
+	-webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 4px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0 1px 4px;
+}
+.bar:hover span {
+	display: block;
+	margin-top: -25px;
+}
+
+
+
+#data-table {
+	display: none;
+}
+.bar span {
+	background: #fff ; 
+}
+.fig0 {
+	background: #ffc59b ;
+}
+.fig1 {
+	background: #f88c6c ;
+}
+.fig2 {
+	background: #e64e21 ;
+}
+
